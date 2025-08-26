@@ -1,0 +1,20 @@
+.brand__thumbnail {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1.33;
+  background-color: white;
+  object-fit: cover;
+}
+
+.brand-info {
+  margin-top: 10px;
+}
+
+.brand-title {
+  font-weight: 500;
+}
+
+.brand-subtitle {
+  color: gray;
+}
