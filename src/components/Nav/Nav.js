@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Nav() {
   return (
     <nav className="mb-8">
@@ -7,10 +9,10 @@ export default function Nav() {
 
           <ul className="flex gap-8 ">
             <li>
-              <a href="/">Home</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </div>

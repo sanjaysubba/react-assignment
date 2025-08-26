@@ -4,6 +4,10 @@
   gap: 32px;
 }
 
+.brand__filter button {
+  cursor: pointer;
+}
+
 .loading {
   width: 75px;
   height: 75px;

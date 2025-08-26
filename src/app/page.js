@@ -49,7 +49,7 @@ export default function Home() {
         <ul className="brand__filter flex gap-4 my-8">
           <li>
             <button
-              className={brandSort === "curated" ? "active" : ""}
+              className={brandSort === "curated" ? "active font-bold" : "font-light"}
               onClick={() => setBrandSort("curated")}
             >
               Curated
@@ -57,7 +57,7 @@ export default function Home() {
           </li>
           <li>
             <button
-              className={brandSort === "newest" ? "active" : ""}
+              className={brandSort === "newest" ? "active font-bold" : "font-light"}
               onClick={() => setBrandSort("newest")}
             >
               Newest
@@ -65,7 +65,7 @@ export default function Home() {
           </li>
           <li>
             <button
-              className={brandSort === "az" ? "active" : ""}
+              className={brandSort === "az" ? "active font-bold" : "font-light"}
               onClick={() => setBrandSort("az")}
             >
               A-Z
