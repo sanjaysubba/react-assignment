@@ -1,10 +1,13 @@
-// pages/contact.js or app/contact/page.js
+import Nav from '../../components/Nav/Nav';
 import ContactForm from '../../components/ContactForm/ContactForm';
+import { Footer } from '../../components/Footer/Footer';
 
 export default function ContactPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <>
+      <Nav />
       <ContactForm />
-    </div>
+      <Footer />
+    </>
   );
 }

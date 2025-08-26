@@ -2,7 +2,7 @@ import './CardBrand.css';
 
 export default function CardBrand({ item }) {
   return (
-    <a href={`${item.slug}`}>
+    <a href={`https://hw2l96z9d4lmwrzcpyznvzxnw.js.wpenginepowered.com/work/project/${item.slug}`} target="_blank" rel="noreferrer" className="brand__card">
       <img
         className="brand__thumbnail"
         src={item.thumbnail.sizes[0][0]}

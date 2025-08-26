@@ -1,9 +1,10 @@
-// app/page.js
 "use client";
 
 import { useState, useEffect } from "react";
 import "./style.css";
 import CardBrand from "../components/CardBrand/CardBrand";
+import Nav from "../components/Nav/Nav";
+import { Footer } from "../components/Footer/Footer";
 
 export default function Home() {
   const [brands, setBrands] = useState(null);
@@ -19,7 +20,18 @@ export default function Home() {
 
   console.log(brands);
 
-  if (!brands) return <p>Loading…</p>;
+  if (!brands)
+    return (
+      <>
+        <Nav />
+        <div className="container">
+          <div className="flex items-center justify-center min-h-screen w-full">
+            <div className="loading"></div>
+          </div>
+        </div>
+        <Footer />
+      </>
+    );
 
   let sortedBrands = [...brands];
   if (brandSort === "curated") {
@@ -32,6 +44,7 @@ export default function Home() {
 
   return (
     <>
+      <Nav />
       <div className="container">
         <ul className="brand__filter flex gap-4 my-8">
           <li>
@@ -66,6 +79,8 @@ export default function Home() {
           ))}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 }
